@@ -1,0 +1,16 @@
+#logo
+{
+    font-size: 50px
+}
+#logo_button:link
+{
+    text-decoration: none;
+}
+#logo_button
+{
+    color: white;
+}
+.image
+{
+    width: 400px;
+}

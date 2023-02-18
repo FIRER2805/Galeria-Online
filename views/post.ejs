@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("./partials/header") %>
+        <title>Post</title>
+    </head>
+    <body>
+        <%- include("./partials/navbar") %>
+        <form action="upload" method="POST" enctype="multipart/form-data" onsubmit="return fileSize()">
+            <input type="file" name="file" id="file">
+            <input type="submit" value="upload">
+        </form>
+        <script src="/js/uploadForm.js"></script>
+        <%- include("./partials/dependencies") %>
+    </body>
+</html>

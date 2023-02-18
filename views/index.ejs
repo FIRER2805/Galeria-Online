@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include("./partials/header") %>
+        <title>Home</title>
+    </head>
+    <body>
+        <%- include("./partials/navbar") %>
+        <div class="container">
+            <br>
+            <a href="post" class="btn btn-light" style="background-color:lightskyblue; color: white;">postar</a>
+            <br>
+            <% posts.forEach(post=>{ %>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="<%= post.imagePath %>" class="image mx-auto d-block">
+                    </div>
+                    <div class="card-footer">
+                        <a href="postPage/<%= post.idPost %>" class="btn btn-light" style="background-color:lightskyblue; color: white;">ver postagem</a>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+        <%- include("./partials/dependencies") %>
+    </body>
+</html>
